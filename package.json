@@ -1,0 +1,25 @@
+{
+  "name": "dataflow-api",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swazza/dataflow-api.git"
+  },
+  "author": "Swarup Karavadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swazza/dataflow-api/issues"
+  },
+  "homepage": "https://github.com/swazza/dataflow-api#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9"
+  }
+}
