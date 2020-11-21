@@ -1,13 +1,15 @@
 import express = require("express");
 import bootstrap = require("./bootstrap");
+import middleware = require("./middleware");
 
-const envVars = bootstrap.getEnvVars();
+bootstrap.init();
 const app = express();
+middleware.init(app);
 
 app.get("/", (req: express.Request, res: express.Response) => {
   res.send("Hello!");
 });
 
-app.listen(envVars.httpPort, () => {
-  console.log(`App listening on port ${envVars.httpPort}`);
+app.listen(process.env.HTTP_PORT, () => {
+  console.log(`App listening on port ${process.env.HTTP_PORT}`);
 });
